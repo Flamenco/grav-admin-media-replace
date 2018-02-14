@@ -26,4 +26,4 @@ You should now have all the plugin files under
 
 ## Usage
 
-See [Official Documentation](https://www.twelvetone.tv/docs/admin/pages/developer-tools/grav-plugins/admin-media-replace-plugin)
+See [Official Documentation](https://www.twelvetone.tv/docs/developer-tools/grav-plugins/admin-media-replace-plugin)
