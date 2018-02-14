@@ -1,6 +1,6 @@
 # Admin Media Replace Plugin
 
-The **Admin Media Replace** Plugin is for [Grav CMS](http://github.com/getgrav/grav). A plugin which adds the option to move media files in the page bin to another page.
+The **Admin Media Replace** Plugin is for [Grav CMS](http://github.com/getgrav/grav). A plugin which adds the option to replace media.
 
 ## Installation
 
@@ -25,7 +25,5 @@ You should now have all the plugin files under
 > NOTE: This plugin is a modular component for Grav which requires [Grav](http://github.com/getgrav/grav) and the [Admin](https://github.com/getgrav/grav-plugin-admin) plugin to operate.
 
 ## Usage
-* This plugin will add a new action to items in your media bin.  
-* Selecting the action will open a file picker.
-* The file will be uploaded and will replace your current page.
-* The original filename will be used, so current links will not break.
+
+See [Official Documentation](https://www.twelvetone.tv/docs/admin/pages/developer-tools/grav-plugins/admin-media-replace-plugin)
