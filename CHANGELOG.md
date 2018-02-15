@@ -1,3 +1,12 @@
+# v1.0.1
+##  1/25/2018
+
+1. [](#new)
+    * Add dialog
+    * Add quicksend option
+    * Enforce extension, image, and file-rename options
+    * Refactor project layout
+    
 # v1.0.0
 ##  1/24/2018
 
