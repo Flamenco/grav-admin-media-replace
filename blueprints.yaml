@@ -23,7 +23,7 @@
 #
 
 name: Admin Media Replace
-version: 1.0.0
+version: 1.0.1
 description: Replaces media in the page media bin.
 icon: plug
 author:
@@ -48,6 +48,18 @@ form:
       label: Plugin status
       highlight: 1
       default: 0
+      options:
+        1: Enabled
+        0: Disabled
+      validate:
+        type: bool
+
+    quicksend:
+      type: toggle
+      label: Quick send
+      description: Bypasses the upload dialog.
+      highlight: 1
+      default: 1
       options:
         1: Enabled
         0: Disabled
