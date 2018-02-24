@@ -256,6 +256,19 @@ class AdminMediaReplacePlugin extends Plugin
                     $errors++;
                     continue;
                 }
+                if (!$grav['config']->get("plugins.$name.enabled")) {
+                    //BUG admin should always be enabled if installed
+                    if ($name !== 'admin') {
+                        $msg = "Dependency Not Enabled: '$name'";
+                        if (is_array($issues)) {
+                            $issues[] = $msg;
+                        } else {
+                            $messages->add($msg, 'error');
+                        }
+                        $errors++;
+                        continue;
+                    }
+                }
                 $realVersion = $found->blueprints()->version;
                 if (!version_compare($realVersion, $version, $compare)) {
                     $msg = "Missing Dependency: '$name' $version";
