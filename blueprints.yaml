@@ -23,7 +23,7 @@
 #
 
 name: Admin Media Replace
-version: 1.0.2
+version: 1.0.3
 description: Replaces media in the page media bin.
 icon: plug
 author:
