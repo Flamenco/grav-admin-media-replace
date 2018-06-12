@@ -7,6 +7,8 @@ function openModalDialog(remodalId) {
     const modal = $.remodal.lookup[dlgElement.data('remodal')];
     modal.open();
 
+    $(dlgElement).find('input[temporary=true]').remove();
+
     return {
         show: function () {
             modal.open();
@@ -26,7 +28,7 @@ function openModalDialog(remodalId) {
             found.on(message, callback);
         },
         /**
-         * 
+         *
          * @param selector {string}
          * @returns {element} The HTML element
          */
@@ -35,13 +37,17 @@ function openModalDialog(remodalId) {
             return found[0];
         },
         /**
-         * 
+         *
          * @param selector {string}
          * @returns {jquery element}
          */
         jget: function (selector) {
             const found = dlgElement.find(selector);
             return found;
+        },
+        setHiddenField: function (name, value, temporary = true) {
+            const form = $(dlgElement).find('form');
+            form.append(`<input type='hidden' temporary='${temporary}' name='${name}' value='${value}' />`);
         }
     }
     // For getting/setting values
