@@ -214,7 +214,7 @@ class AdminMediaReplacePlugin extends Plugin
     }
 
     /**
-     * Checks plugin dependencies.  Call this after all plugins have been loaded.
+     * Checks plugin dependencies.  Call this after all plugins have been loaded and are enabled.
      *
      * @param $plugin
      * @param $issues array Receives issues as strings.  If null, grav['messages'] is used.
